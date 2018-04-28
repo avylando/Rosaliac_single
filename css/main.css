@@ -1,0 +1,117 @@
+@font-face { font-family: Gilroy; src: url("../shared/Gilroy-ExtraBold.eot"); src: url("../shared/Gilroy-ExtraBold.eot?#iefix") format("embedded-opentype"), url("../shared/Gilroy-ExtraBold.woff2") format("woff2"), url("../shared/Gilroy-ExtraBold.woff") format("woff"), url("../shared/Gilroy-ExtraBold.ttf") format("truetype"); font-weight: normal; font-style: normal; font-weight: 700; }
+@font-face { font-family: Gilroy; src: url("../shared/Gilroy-Light.eot"); src: url("../shared/Gilroy-Light.eot?#iefix") format("embedded-opentype"), url("../shared/Gilroy-Light.woff") format("woff"), url("../shared/Gilroy-Light.ttf") format("truetype"); font-weight: normal; font-style: normal; font-weight: 300; }
+
+* {
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+			box-sizing: border-box;
+	-webkit-user-select: none;
+	   -moz-user-select: none;
+			user-select: none;
+}
+
+body { font-family: Gilroy, sans-serif; }
+
+.tab {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	height: 48px;
+	background-color: rgba(255, 255, 255, 0.7);
+}
+
+.tab > li { display: inline-block; }
+
+.tab > li > a {
+	display: block;
+	text-align: center;
+	width: 201.39px;
+	line-height: 48px;
+	font-size: 16px;
+	color: #000;
+	font-weight: 300;
+	text-decoration: none;
+}
+
+.tab > li > a.this { background-color: #fff; }
+
+
+/* --- indication --- */
+
+#indication {
+	width: 1024px;
+	margin: 0 auto;
+}
+
+.indication {
+	position: relative;
+	background-image: url(../images/indication.png);
+	width: 1024px;
+	height: 768px;
+	padding-top: 340px;
+	padding-left: 40px;
+	overflow: hidden;
+}
+
+.indication > .sq-bracket {
+	width: 525px;
+	height: 226px;
+	background-image: url(../images/sq-bracket.png);
+	-webkit-animation: sq-bracket 1s;
+	   -moz-animation: sq-bracket 1s;
+			animation: sq-bracket 1s;
+}
+
+@-webkit-keyframes sq-bracket {
+	from { transform: translateX(-100px); opacity: 0; }
+	to { transform: translateX(0); opacity: 1; }
+}
+
+@-moz-keyframes sq-bracket {
+	from { transform: translateX(-100px); opacity: 0; }
+	to { transform: translateX(0); opacity: 1; }
+}
+
+@keyframes sq-bracket {
+	from { transform: translateX(-100px); opacity: 0; }
+	to { transform: translateX(0); opacity: 1; }
+}
+
+.indication > .twice {
+	position: absolute;
+	top: 420px;
+	right: 90px;
+	font-size: 20px;
+	cursor: default;
+	color: #000;
+	font-weight: 300;
+	width: 205px;
+	text-align: center;
+	line-height: 60px;
+	box-shadow: 0 0 18px rgba(0, 0, 0, 0.2);
+	-webkit-animation: twice 2s infinite;
+	   -moz-animation: twice 2s infinite;
+			animation: twice 2s infinite;
+}
+
+@-webkit-keyframes twice {
+	from { transform: scale(1); }
+	50% { transform: scale(0.8); }
+	to { transform: scale(1); }
+}
+
+@-moz-keyframes twice {
+	from { transform: scale(1); }
+	50% { transform: scale(0.8); }
+	to { transform: scale(1); }
+}
+
+@keyframes twice {
+	from { transform: scale(1); }
+	50% { transform: scale(0.8); }
+	to { transform: scale(1); }
+}
+/* --- indication end --- */
